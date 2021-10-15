@@ -1,0 +1,15 @@
+<additionals>
+    <rerouter id="rerouter_0" edges="M13" probability="1" type="daladala1" route="route_F1">
+        <flow id="carflow1" type="daladala1" beg="1" end="100" number="3" from="M13" to="M1" route="route_F1"/>
+    </rerouter>
+<!--<additionals>
+    <rerouter id="rerouter_2" edges="e2" probability="1">
+        <interval begin="0" end="10000">
+		   <destProbReroute id="e1"/>
+		</interval>
+    </rerouter>
+
+    <e1Detector id="det_0" lane="e4_0" pos="10" freq="500" file="det.out.xml" />
+
+</additionals>
+-->

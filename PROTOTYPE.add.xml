@@ -1,0 +1,11 @@
+<additionals>
+
+     <rerouter id="rerouter_0" edges="M13" probability="1" type="daladala1">
+        <interval begin="0" end="10000">
+		   <destProbReroute id="MK1"/>
+		</interval>
+    </rerouter>
+
+    
+
+</additionals>

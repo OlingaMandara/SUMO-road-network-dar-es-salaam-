@@ -1,0 +1,61 @@
+<additionals>
+
+ <vType id="car11"
+   			vClass="passenger" length="4.3" accel="2.9" decel="7.5"
+   			sigma="0.4" maxSpeed="180"/>
+
+
+ <vType id="car21"
+   			vClass="passenger" length="4.3" accel="2.9" decel="7.5"
+   			sigma="0.8" maxSpeed="180"/>
+
+    
+
+ <vType id="daladala1"
+   			vClass="bus" length="12" accel="7.2" decel="4"
+   			sigma="0.5" maxSpeed="180" color="blue"/> 
+			            
+          
+
+
+ <vType id="ambulence1"
+   			vClass="emergency" length="6.5" accel="8" decel="11"
+   			sigma="1.0" maxSpeed="180" color="white"/>
+
+ <vType id="bodaboda11"
+   			vClass="motorcycle" length="2.2" accel="6" decel="10"
+   			sigma="0.2" maxSpeed="120" color="red"/>
+
+<routes>
+<route edges="M13 M14 M15 M16 M17 FD11 gneE32 FD16 M6 M5 M4 M3 M2 M1 "  id="route_F1"/>
+<route edges="FDD1 FD2 FD4 M14 M15 M16 M17 FD11 gneE32 FD16 M6 M5 M4 M3 M2 FD3 FD1 FDD2"  id="route_F2"/>
+<route edges="M11 M10 M9 M8 M7 M6 FD11 gneE32 FD16 M19 M20 M21 M22 M23"  id="route_F3"/> <!-- CITY CENTRE to MIKOCHENIVIATTCL-->
+<route edges="M11 M10 M9 M8 M7 M6 M5 M4 M3 M2 M1"  id="route_F4"/> <!-- CITY CENTRE to TEGETA-->
+<route edges="M13 M14 M15 M16 M17 M18 M19 M20 M21 M22 M23"  id="route_F5"/> <!-- CITY CENTRE to TEGETA-->
+<route edges="FD20 FD22 M10 M9 M8 M7 M6 FD11 gneE32 FD16 M19 M20 M21 M22 FD21 FD19 "  id="route_F6"/> <!-- CITY CENTRE to TEGETA-->
+<route edges="gneE32 FD16 M19 M20 M21 M22 M23"  id="route_F7"/> <!-- CITY CENTRE to TEGETA-->
+<route edges="gneE32 FD16 M6 M5 M4 M3 M2 M1 "  id="route_F8"/> <!-- CITY CENTRE to TEGETA-->
+<route edges="M13 FD3 FD1 FDD2"  id="route_F9"/> <!-- TEGETA TO CHUO-->
+<route edges="FDD1 FD2 FD4 M1"  id="route_F10"/> <!-- CHUO to TEGETA-->
+<route edges="FD20 FD22 FU18 FU16"  id="route_F11"/> <!-- MAGOMENI TO MAGOMENI-->
+<route edges="FU15 FU17 FD21 FD19"  id="route_F12"/> <!-- MASAKI to MAGOMENI-->
+<route edges="-gneE32 C6 FDD8 FDD10"  id="route_F13"/> <!-- MAKUMBUSHO to SINZA-->
+<route edges="FDD9 FDD7 C3 gneE32 "  id="route_F14"/> <!-- MAKUMBUSHO to SINZA-->
+</routes>
+ <flow id="carflow1" type="daladala1" beg="1" end="100" number="3" from="M13" to="M1" route="route_F1"/> <!--TEGETA/BUNJU MAKUMBUSHO-->
+ <flow id="carflow2" type="daladala1" beg="5" end="100" number="3" from="M11" to="M23" route="route_F3"/><!--POSTA MAKUMBUSHO-->
+ <flow id="carflow3" type="daladala1" beg="3" end="100" number="3" from="FD2" to="FD1" route="route_F2"/><!--chuo makumbusho-->
+ <flow id="carflow4" type="daladala1" beg="5" end="100" number="3" from="M11" to="M23" route="route_F4"/><!--POSTA TEGETA-->
+<flow id="carflow5" type="daladala1" beg="0" end="100" number="5" from="FU13" to="M23" route="route_F5"/><!--TEGETA POSTA-->
+<flow id="carflow6" type="daladala1" beg="4" end="100" number="5" from="FU15" to="FU16" route="route_F6"/><!--kawe makumbusho-->
+<flow id="carflow7" type="daladala1" beg="5" end="100" number="5" from="gneE32" to="M23" route="route_F7"/><!-- makumbusho-->
+<flow id="carflow8" type="daladala1" beg="20" end="100" number="5" from="gneE32" to="M1" route="route_F8"/><!-- makumbusho-->
+<flow id="carflow9" type="daladala1" beg="1" end="100" number="3" from="M13" to="M1" route="route_F9"/> <!--TEGETA/BUNJU MAKUMBUSHO-->
+<flow id="carflow10" type="daladala1" beg="0" end="100" number="3" from="FDD1" to="FDD2" route="route_F10"/> <!--TEGETA/BUNJU MAKUMBUSHO-->
+<flow id="carflow11" type="daladala1" beg="0" end="100" number="3" from="FD20" to="FU16" route="route_F11"/> <!--TEGETA/BUNJU MAKUMBUSHO-->
+<flow id="carflow12" type="daladala1" beg="0" end="100" number="3" from="FU15" to="FD19" route="route_F12"/> <!--TEGETA/BUNJU MAKUMBUSHO-->
+<flow id="carflow113" type="daladala1" beg="0" end="100" number="3" from="-gneE32" to="FDD10" route="route_F13"/> <!--MAKUMBUSHO SINZA-->
+<flow id="carflow14" type="daladala1" beg="0" end="100" number="3" from="FDD9" to="gneE32" route="route_F14"/> <!--MAKUMBUSHO SINZA-->
+
+
+</additionals>
